@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: server-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/houcc1012/shop-config.git
+          search-paths: config
+          username: houcc1012
+          password: lunar0904
+      label: master
+server:
+  port: 8888
